@@ -1,0 +1,16 @@
+DATA SOURCE
+
+The datasets used in this project were obtained from the cBioPortal Datahub.
+
+Clinical data:
+data_clinical_sample.txt
+
+Gene expression data:
+data_mrna_agilent_microarray.txt
+
+Original source:
+https://github.com/cBioPortal/datahub/tree/master/public/brca_tcga_pub
+
+The gene expression dataset is not included in this repository due to its file size.
+
+It should be downloaded from the original source and placed in this directory before running the notebooks.
