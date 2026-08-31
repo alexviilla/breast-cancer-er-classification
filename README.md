@@ -47,7 +47,7 @@ The first notebook investigates the global structure of the gene expression data
 
 PCA was used to reduce the dimensionality of the expression data and visualize the main sources of variation.
 
-*See `results/figures/01_1_pca_er_status.png`.*
+*See `results/figures/01.1.pca_er_status.png`.*
 
 The first two principal components (8.6% and 5.4% of total variance, respectively) showed a **partial separation** between ER-positive and ER-negative samples: ER-negative samples cluster predominantly at negative PC1 values, while ER-positive samples span a wider range, with substantial overlap in the central region. This indicates that ER status is associated with a real transcriptional signal, although it is not the only source of variation in the dataset — expected, given that thousands of genes and other sources of biological variability contribute to overall expression patterns.
 
@@ -68,7 +68,7 @@ This identified **950 candidate genes** in the exploratory analysis (using all 5
 
 ## Volcano Plot
 
-*See `results/figures/01_2_volcano_plot.png`.*
+*See `results/figures/01.2.volcano_plot.png`.*
 
 The volcano plot visualizes, for every gene, the relationship between effect size (x-axis: mean expression difference, ER+ minus ER−) and statistical significance (y-axis: −log10 FDR). The genes with the strongest combined effect size and significance included **ESR1**, **GATA3**, **AGR3** and **CA12** — all biologically consistent with the ER-positive phenotype.
 
@@ -108,7 +108,7 @@ Two complementary classification models were evaluated on the same independent t
 | **Logistic Regression** | **0.923** | **0.962** | **0.938** | **0.949** | **0.900** |
 | Random Forest | 0.904 | 0.938 | 0.938 | 0.938 | 0.892 |
 
-*See `results/figures/02_1_roc_comparison.png`.*
+*See `results/figures/02.1.roc_comparison.png`.*
 
 **Logistic Regression achieved the best overall performance**, with 92.3% accuracy, a 0.949 F1-score and a 0.900 ROC-AUC. Random Forest performed comparably but slightly below it. The results suggest that a relatively simple linear model was sufficient to capture much of the predictive signal present in the selected gene expression features.
 
@@ -116,7 +116,7 @@ Two complementary classification models were evaluated on the same independent t
 
 # Model Interpretation
 
-*See `results/figures/02_2_logistic_regression_coefficients.png`.*
+*See `results/figures/02.2.logistic_regression_coefficients.png`.*
 
 The Logistic Regression coefficients were examined to identify genes contributing most strongly to ER-status prediction. Positive coefficients push the prediction towards ER-positive status; negative coefficients push it towards ER-negative status.
 
